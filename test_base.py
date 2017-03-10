@@ -1,2 +1,5 @@
-a = input()
-print(a[:100])
+import csv
+>>> with open('base_scarg.csv') as csvfile:
+...     reader = csv.DictReader(csvfile)
+...     for row in reader:
+...         print(row['first_name'], row['last_name'])
